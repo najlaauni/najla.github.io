@@ -30,7 +30,7 @@ I am currently a Data Engineering student at Universiti Teknologi Malaysia (UTM)
 ## 🚀 Live Website
 
 🔗 View my portfolio here:
-https://najlaauni.github.io
+[https://najlaauni.github.io](https://najlaauni.github.io/najla.github.io/)
 
 ---
 
