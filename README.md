@@ -21,7 +21,7 @@ I am currently a Data Engineering student at Universiti Teknologi Malaysia (UTM)
 
 ## 🛠 Technologies Used
 
-- HTML5
+- HTML
 - CSS
 - GitHub Pages (for deployment)
 
