@@ -27,6 +27,11 @@ I am currently a Data Engineering student at Universiti Teknologi Malaysia (UTM)
 
 ---
 
+## 📷 Photos
+<img width="1551" height="814" alt="Screenshot (27)" src="https://github.com/user-attachments/assets/295b754b-b383-4603-9aaf-9da69bc7d33b" />
+
+
+
 ## 🚀 Live Website
 
 🔗 View my portfolio here:
