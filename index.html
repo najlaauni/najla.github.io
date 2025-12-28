@@ -15,6 +15,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: #f5f7fb;
     color: #333;
@@ -42,15 +46,14 @@ header {
 }
 
 header img {
-    width: 130px;          /* kecil & kemas */
-    height: auto;          /* ikut ratio asal */
-    aspect-ratio: 3 / 4;   /* ikut 450x600 */
-    border-radius: 16px;   /* LinkedIn-style (tak bulat) */
+    width: 130px;
+    aspect-ratio: 3 / 4;
+    border-radius: 16px;
     object-fit: cover;
     border: 3px solid white;
     box-shadow: 0 6px 18px rgba(0,0,0,0.25);
 }
-    
+
 header h1 {
     font-size: 2.7rem;
     font-weight: 600;
@@ -61,6 +64,33 @@ header p {
     opacity: 0.9;
 }
 
+/* ===== COURSE BAR ===== */
+.course-bar {
+    background: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.05);
+}
+
+.course-bar a {
+    padding: 10px 18px;
+    border-radius: 20px;
+    background: #e9ecff;
+    color: #4b5cff;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.course-bar a:hover {
+    background: #4b5cff;
+    color: white;
+}
+
+/* ===== CONTENT ===== */
 section {
     max-width: 1000px;
     margin: auto;
@@ -95,9 +125,7 @@ ul {
 }
 
 a {
-    color: #4b5cff;
     text-decoration: none;
-    font-weight: 500;
 }
 
 footer {
@@ -117,18 +145,15 @@ footer {
         text-align: center;
     }
 }
-    
-}
-
 </style>
 </head>
 
 <body>
 
+<!-- ===== HEADER ===== -->
 <header>
     <div class="header-content linkedin-style">
         <img src="profile.jpg" alt="Profile Picture">
-
         <div class="header-text">
             <h1>Najla Auni</h1>
             <p>First-Year Student | Bachelor of Computer Science (Data Engineering)</p>
@@ -136,285 +161,79 @@ footer {
     </div>
 </header>
 
+<!-- ===== COURSE SELECTION BAR ===== -->
+<div class="course-bar">
+    <a href="#seci">SECI1013</a>
+    <a href="#secj">SECJ1013</a>
+    <a href="#secp">SECP1513</a>
+    <a href="#secr">SECR1013</a>
+    <a href="#ulrs">ULRS1032</a>
+</div>
+
 <section>
 
+<!-- ===== ABOUT ===== -->
 <div class="card">
     <h2>👩‍💻 About Me</h2>
     <p>
-        I am a first-year Data Engineering student at Universiti Teknologi Malaysia (UTM). 
-        I am fluent in English and Malay. I am passionate about coding, teaching, and continuous learning, 
-        with strong interests in data analysis, software systems, and automation.
-    </p>
-    <p>
-        <strong>Fun fact:</strong> I love learning new tech stuff, especially when it makes life easier 
-        or simply looks cool.
+        I am a first-year Data Engineering student at Universiti Teknologi Malaysia (UTM).
+        I am fluent in English and Malay, and I enjoy coding, teaching, and continuous learning.
     </p>
 </div>
 
-<div class="card">
-    <h2>🌱 Education</h2>
+<!-- ===== COURSES ===== -->
+<div class="card" id="seci">
+    <h2>📘 SECI1013 – Discrete Structure</h2>
+    <p>Introduced me to logical thinking, proofs, and mathematical reasoning used in computer science.</p>
+</div>
+
+<div class="card" id="secj">
+    <h2>💻 SECJ1013 – Programming Technique I</h2>
+    <p>Focused on C++ fundamentals such as loops, functions, arrays, and problem-solving techniques.</p>
+</div>
+
+<div class="card" id="secp">
+    <h2>🖥️ SECP1513 – Technology & Information System</h2>
+
+    <h4>Assignments</h4>
     <ul>
-        <li><b>Universiti Teknologi Malaysia</b> (2025 – Present)<br>
-        Bachelor of Computer Science (Data Engineering) with Honors</li><br>
-    
-        <li><b>Kolej Mara Kuala Nerang</b> (2024 – 2025)<br>
-        Foundation in Engineering and Technology<br>
-        CGPA: 4.0 | MUET: Band 4.0</li><br>
-        
-        <li><b>SMK Sultanah Asma</b> (2019 – 2024)<br>
-        SPM: 7A 2B+</li>
-    </ul>
-</div>
-
-<div class="card">
-<h2>🤝 Positions & Leadership</h2>
-<ul>
-<li><b>Kolej Mara Kuala Nerang</b><br>
-Unit Tindakan Khas Kolej Kediaman (Activity & Entrepreneurship Unit) — 2024–2025<br>
-Chess Club (Gift & Souvenir Committee) — 2024–2025<br>
-Muay Thai Club (Welfare Committee) — 2025</li><br>
-
-<li><b>SMK Sultanah Asma</b><br>
-Librarian (Treasurer) — 2022–2023<br>
-Career Club (Board Committee) — 2019–2023<br>
-Pandu Puteri (AJK Tingkatan 5) — 2023<br>
-Netball Club (Entrepreneurship Unit) — 2019–2023<br>
-Student of Commendable Character — 2023</li>
-</ul>
-</div>
-
-<div class="card">
-<h2>🏆 Certificates & Awards</h2>
-<ul>
-<li>3rd Place in Explorace (Victernal Week) — 2025</li>
-<li>Participated in KMKN Chess Workshop (National Level)</li>
-<li>1st Place in Anti-Drug e-Poster — 2023</li>
-<li>1st place in Raya Video Competition - 2023</li>
-<li>2nd Place in Anti-Drug e-Flipbook — 2023</li>
-<li>Participated in K₃M Chemistry Quiz — 2023</li>
-<li>1st Place in Independence Poster — 2022</li>
-<li>4th place in Pandu Puteri SDG Quiz Competition - 2022</li>
-<li>4th place in 65th National Day Celebration Foot Parade (Pandu Puteri) - 2022</li>
-<li>Satria Volunteer in Le Tour De Langkawi (International Level) — 2022</li>
-</ul>
-</div>
-
-<div class="card">
-<h2>📚 Courses</h2>
-<ul>
-<li><a href="https://github.com/najlaauni/UniversityLife/tree/main/SECI1013%20-%20Discrete%20Structure" target="_blank">SECI1013 – Discrete Structure</a></li>
-<li><a href="https://github.com/najlaauni/UniversityLife/tree/main/SECJ1013%20-%20Programming%20Technique%20I" target="_blank">SECJ1013 – Programming Technique I</a></li>
-<li><a href="https://github.com/najlaauni/UniversityLife/tree/main/SECP1513%20-%20Technology%20and%20Information%20System" target="_blank">SECP1513 – Technology & Information System</a></li>
-<li><a href="https://github.com/najlaauni/UniversityLife/tree/main/SECR1013%20-%20Digital%20Logic" target="_blank">SECR1013 – Digital Logic</a></li>
-<li><a href="https://github.com/najlaauni/UniversityLife/tree/main/ULRS1032%20-%20Integrity%20and%20Anti-Corruption" target="_blank">ULRS1032 – Integrity & Anti-Corruption</a></li>
-</ul>
-</div>
-
-<div class="card">
-<h2>🚀 Recent Projects</h2>
-<ul>
-<li><a href="https://github.com/najlaauni/UniversityProject/tree/main/Library%20Book%20Checkout%20System" target="_blank">📚 Library Book Checkout System</a></li>
-</ul>
-</div>
-
-<div class="card">
-    <h2>🧠 Skills</h2>
-    <div class="skills">
-        <span>C++</span>
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>Dev C++</span>
-        <span>GitHub</span>
-        <span>Visual Studio Code</span>
-        <span>Canva</span>
-        <span>Microsoft Word</span>
-        <span>Microsoft Excel</span>
-    </div>
-</div>
-
-<div class="card">
-    <h2>📚 Courses (Semester 1)</h2>
-    <ul>
-        <li><a href="#seci">SECI1013 – Discrete Structure</a></li>
-        <li><a href="#secj">SECJ1013 – Programming Technique I</a></li>
-        <li><a href="#secp">SECP1513 – Technology and Information System</a></li>
-        <li><a href="#secr">SECR1013 – Digital Logic</a></li>
-        <li><a href="#ulrs">ULRS1032 – Integrity and Anti-Corruption</a></li>
-    </ul>
-</div>
-
-    <div class="card" id="seci">
-    <h2>SECI1013 – Discrete Structure</h2>
-
-    <h3>Assignments</h3>
-    <ul>
-        <li>Assignment 1 – Logic & Set Theory</li>
-        <li>Assignment 2 – Relations & Functions</li>
-        <li>Assignment 3 – Graph Theory</li>
+        <li>Industry Talk Video</li>
+        <li>Poster Presentation</li>
+        <li>Academic Writing</li>
+        <li>Design Thinking Project</li>
     </ul>
 
-    <h3>Course Reflection</h3>
-    <p>
-        The Discrete Structure course strengthened my logical thinking and problem-solving
-        skills. I learned fundamental mathematical concepts such as sets, relations,
-        functions, and graphs, which are essential in computer science. Although some
-        topics were challenging, consistent practice helped me improve my understanding.
-        This course enhanced my ability to think systematically and apply logic to
-        technical problems.
-    </p>
-</div>
-
-    <div class="card" id="secj">
-    <h2>SECJ1013 – Programming Technique I</h2>
-
-    <h3>Assignments</h3>
-    <ul>
-        <li>Assignment 1 – Basic Programming Concepts</li>
-        <li>Assignment 2 – Control Structures</li>
-        <li>Assignment 3 – Functions & Arrays</li>
-        <li>Lab Exercises</li>
-    </ul>
-
-    <h3>Course Reflection</h3>
-    <p>
-        This course introduced me to fundamental programming concepts and problem-solving
-        techniques using structured programming. I learned how to write, debug, and test
-        simple programs, which improved my coding confidence. The main challenge was
-        understanding program logic, but regular practice helped me overcome it. This
-        course built a strong foundation for more advanced programming subjects.
-    </p>
-</div>
-
-    <div class="card" id="secp">
-    <h2>SECP1513 – Technology and Information System</h2>
-
-    <h3>Assignments & Activities</h3>
-    <ul>
-        <li>Industry Talk & Industry Visit (Poster, Video, Report, Technical Paper)</li>
-        <li>Design Thinking – Low Fidelity Prototype</li>
-        <li>PC Assemble (Lab)</li>
-    </ul>
-
-    <h3>Course Reflection</h3>
-    <p>
-        Through the Technology and Information System course, I gained exposure to how
-        technology is applied in real-world organizational and industrial environments.
-        The industry talks and visits provided valuable insights into professional
-        practices, while the design thinking activities enhanced my creativity and
-        user-centered problem-solving skills. Although preparing technical reports was
-        challenging, it improved my documentation and communication abilities. Overall,
-        this course helped me understand the relationship between technology, systems, and
-        real-world applications.
-    </p>
-</div>
-
-    <div class="card" id="secr">
-    <h2>SECR1013 – Digital Logic</h2>
-
-    <h3>Assignments</h3>
-    <ul>
-        <li>Lab Exercises – Logic Gates</li>
-        <li>Combinational Circuit Design</li>
-        <li>Simulation Using Deeds</li>
-    </ul>
-
-    <h3>Course Reflection</h3>
-    <p>
-        The Digital Logic course introduced me to the fundamentals of digital circuits and
-        logical design. I learned how logic gates and combinational circuits function and
-        how to simulate them using appropriate tools. Understanding circuit behavior was
-        initially challenging, but hands-on lab work helped reinforce theoretical
-        concepts. This course improved my analytical and technical thinking skills.
-    </p>
-</div>
-
-    <div class="card" id="ulrs">
-    <h2>ULRS1032 – Integrity and Anti-Corruption</h2>
-
-    <h3>Assignments</h3>
-    <ul>
-        <li>Case Study Analysis</li>
-        <li>Group Discussion & Presentation</li>
-        <li>Written Reflection</li>
-    </ul>
-
-    <h3>Course Reflection</h3>
-    <p>
-        This course increased my awareness of ethical values, integrity, and the impact of
-        corruption in society. Through discussions and case studies, I learned the
-        importance of ethical decision-making in both personal and professional contexts.
-        The course encouraged me to reflect on my responsibilities as a future
-        professional and to uphold integrity in my actions.
-    </p>
-</div>
-
-<div class="card">
-    <h2>🖥️ Technology & Information System (TIS)</h2>
-
-    <h4>Industry Talk & Industry Visit</h4>
-    <ul>
-        <li>
-            <strong>Assignment 1 (Video)</strong><br>
-            🔗 <a href="https://github.com/najlaauni/UniversityLife/blob/main/SECP1513%20-%20Technology%20and%20Information%20System/Assignment%201%20%3A%20UTMDigital%20Open%20Day.md" target="_blank">Watch Video</a>
-        </li>
-        <li>
-            <strong>Assignment 2 (Poster)</strong><br>
-            🔗 <a href="https://github.com/najlaauni/UniversityLife/blob/main/SECP1513%20-%20Technology%20and%20Information%20System/Assignment%202%20%3A%20PPG%20Talk.md" target="_blank">View Poster</a>
-        </li>
-        <li>
-            <strong>Assignment 3 (Academic Writing)</strong><br>
-            🔗 <a href="https://github.com/najlaauni/UniversityLife/blob/main/SECP1513%20-%20Technology%20and%20Information%20System/Assignmeny%203%20%3A%20Project%20Management%20and%20System%20Development%20Talk.md" target="_blank">Read Academic Writing</a>
-        </li>
-        <li>
-            <strong>Assignment 4 (Technical Paper – IEEE Format)</strong><br>
-            🔗 <a href="#" target="_blank">View Technical Paper</a>
-        </li>
-         <li>
-            <strong>PC Assemble (Lab)</strong><br>
-            🔗 <a href="https://github.com/najlaauni/UniversityLife/blob/main/SECP1513%20-%20Technology%20and%20Information%20System/Lab%20%3A%20PC%20Assembly.md" target="_blank">View Lab Work</a>
-        </li>
-         <li>
-            <strong>Design Thinking</strong><br>
-            🔗 <a href="#" target="_blank">View Assignment</a>
-    </ul>
-
-<br>
     <h4>Reflection (Design Thinking)</h4>
     <p>
-    The Design Thinking Project has imparted to me a user-focused method for problem-solving. By means of low-fidelity prototyping exercises, I have been acquiring the skills to identify user problems, generate ideas, and transform them into plain and yet effective solutions. It was difficult to take non-concrete ideas and turn them into usable designs that meet actual user needs. Nonetheless, the class developed my creativity, cooperation, and discourse abilities. In the future, I will try to master prototyping skills and make more effective use of the design thinking principles in the projects to be done.    </p>
-</br>
+        The Design Thinking project helped me understand user-centered problem solving by identifying real
+        problems, ideating solutions, and creating simple prototypes.
+    </p>
 
-<br>
     <h4>Reflection (TIS)</h4>
     <p>
-    The Technology & Information System (TIS) course provided me with a more comprehensive view of the application of information systems in the light of industry, particularly through the exposure to industry speakers and visiting companies. The interaction of technology, business processes, and system management became clearer to me through this course. Among the difficulties I encountered, was the need to get used to the technical terminology and writing reports organized according to the industry's expectations. Nonetheless, this experience was a good training ground for me regarding technical writing and analysis skills. I am going to take up managing my time better and deepening my knowledge of system-based technologies as my next step.
+        This course enhanced my understanding of how information systems support business and industry,
+        while also improving my technical writing and analytical skills.
     </p>
-    
 </div>
 
+<div class="card" id="secr">
+    <h2>🔌 SECR1013 – Digital Logic</h2>
+    <p>Covered combinational circuits, logic gates, and Boolean algebra.</p>
+</div>
 
+<div class="card" id="ulrs">
+    <h2>⚖️ ULRS1032 – Integrity & Anti-Corruption</h2>
+    <p>Strengthened my ethical awareness and understanding of integrity in academic and professional life.</p>
+</div>
+
+<!-- ===== OVERALL REFLECTION ===== -->
 <div class="card">
-    <!-- Overall Reflection -->
     <h2>📝 Overall Semester Reflection</h2>
     <p>
-    Overall, this semester was an excellent foundation for me in data engineering principles, system thinking, and problem-solving skills. The technical parts were learnt through the lectures but at the same time, the soft skills like communication, teamwork, and self-study were developed. Even though the workload was heavy, it was a good lesson on the need for good time management and persistence. I came out of this semester with the determination to learn more and develop my skills, and also with a stronger interest in making further studies and career growth in the area of data and technology.    
+        This semester built a strong foundation in both technical and soft skills. Although challenging,
+        it improved my discipline, time management, and motivation to continue learning in the field of
+        data and technology.
     </p>
-</div>
-
-
-<div class="card">
-<h2>🎯 Goals</h2>
-<ul>
-<li>Pursue a PhD and become a lecturer</li>
-<li>Continue building smart, efficient systems</li>
-</ul>
-</div>
-
-<div class="card">
-<h2>📬 Connect With Me</h2>
-<p>📧 Email: <a href="mailto:najlaaunio6@gmail.com">najlaaunio6@gmail.com</a></p>
-<p>🔗 GitHub: <a href="https://github.com/najlaauni" target="_blank">github.com/najlaauni</a></p>
-<p>💼 LinkedIn: <a href="https://www.linkedin.com/in/najla-auni-a1607a378/" target="_blank">najla auni</a></p>
 </div>
 
 </section>
