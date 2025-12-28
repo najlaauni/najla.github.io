@@ -4,164 +4,16 @@
 <meta charset="UTF-8">
 <title>Najla Auni | Portfolio</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
-<style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    background: #f5f7fb;
-    color: #333;
-    line-height: 1.6;
-}
-
-header {
-    background: linear-gradient(135deg, #667eea, #764ba2);
-    color: white;
-    padding: 80px 20px;
-    text-align: center;
-}
-
-.header-content.linkedin-style {
-    display: flex;
-    align-items: center;
-    max-width: 1000px;
-    margin: auto;
-    padding: 40px 20px;
-    gap: 40px;
-}
-
-.header-text {
-    text-align: left;
-}
-
-header img {
-    width: 130px;
-    aspect-ratio: 3 / 4;
-    border-radius: 16px;
-    object-fit: cover;
-    border: 3px solid white;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
-}
-
-header h1 {
-    font-size: 2.7rem;
-    font-weight: 600;
-}
-
-header p {
-    margin-top: 8px;
-    opacity: 0.9;
-}
-
-/* ===== COURSE BAR ===== */
-.course-bar {
-    background: white;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 12px;
-    padding: 20px;
-    box-shadow: 0 4px 14px rgba(0,0,0,0.05);
-}
-
-.course-bar a {
-    padding: 10px 18px;
-    border-radius: 20px;
-    background: #e9ecff;
-    color: #4b5cff;
-    font-size: 0.9rem;
-    font-weight: 500;
-    transition: all 0.3s ease;
-}
-
-.course-bar a:hover {
-    background: #4b5cff;
-    color: white;
-}
-
-/* ===== CONTENT ===== */
-section {
-    max-width: 1000px;
-    margin: auto;
-    padding: 50px 20px;
-}
-
-.card {
-    background: white;
-    padding: 30px;
-    margin-bottom: 30px;
-    border-radius: 16px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
-}
-
-h2 {
-    margin-bottom: 15px;
-    color: #444;
-}
-
-ul {
-    padding-left: 20px;
-}
-
-.skills span {
-    display: inline-block;
-    background: #e9ecff;
-    color: #4b5cff;
-    padding: 8px 14px;
-    border-radius: 20px;
-    margin: 5px;
-    font-size: 0.9rem;
-}
-
-a {
-    text-decoration: none;
-}
-
-footer {
-    text-align: center;
-    padding: 30px;
-    font-size: 0.9rem;
-    color: #777;
-}
-
-@media (max-width: 600px) {
-    .header-content.linkedin-style {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .header-text {
-        text-align: center;
-    }
-}
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- ===== HEADER ===== -->
 <header>
-    <div class="header-content linkedin-style">
-        <img src="profile.jpg" alt="Profile Picture">
-        <div class="header-text">
-            <h1>Najla Auni</h1>
-            <p>First-Year Student | Bachelor of Computer Science (Data Engineering)</p>
-        </div>
-    </div>
+    <h1>Najla Auni</h1>
+    <p>First-Year Data Engineering Student | UTM</p>
 </header>
 
-<!-- ===== COURSE SELECTION BAR ===== -->
 <div class="course-bar">
     <a href="seci.html">SECI1013</a>
     <a href="secj.html">SECJ1013</a>
@@ -172,75 +24,40 @@ footer {
 
 <section>
 
-<!-- ===== ABOUT ===== -->
 <div class="card">
-    <h2>👩‍💻 About Me</h2>
-    <p>
-        I am a first-year Data Engineering student at Universiti Teknologi Malaysia (UTM).
-        I am fluent in English and Malay, and I enjoy coding, teaching, and continuous learning.
-    </p>
+<h2>👩‍💻 About Me</h2>
+<p>
+I am a first-year Data Engineering student at Universiti Teknologi Malaysia (UTM).
+I am passionate about coding, teaching, and continuous learning, with interests in
+data analysis, software systems, and automation.
+</p>
 </div>
 
-<!-- ===== COURSES ===== -->
-<div class="card" id="seci">
-    <h2>📘 SECI1013 – Discrete Structure</h2>
-    <p>Introduced me to logical thinking, proofs, and mathematical reasoning used in computer science.</p>
-</div>
-
-<div class="card" id="secj">
-    <h2>💻 SECJ1013 – Programming Technique I</h2>
-    <p>Focused on C++ fundamentals such as loops, functions, arrays, and problem-solving techniques.</p>
-</div>
-
-<div class="card" id="secp">
-    <h2>🖥️ SECP1513 – Technology & Information System</h2>
-
-    <h4>Assignments</h4>
-    <ul>
-        <li>Industry Talk Video</li>
-        <li>Poster Presentation</li>
-        <li>Academic Writing</li>
-        <li>Design Thinking Project</li>
-    </ul>
-
-    <h4>Reflection (Design Thinking)</h4>
-    <p>
-        The Design Thinking project helped me understand user-centered problem solving by identifying real
-        problems, ideating solutions, and creating simple prototypes.
-    </p>
-
-    <h4>Reflection (TIS)</h4>
-    <p>
-        This course enhanced my understanding of how information systems support business and industry,
-        while also improving my technical writing and analytical skills.
-    </p>
-</div>
-
-<div class="card" id="secr">
-    <h2>🔌 SECR1013 – Digital Logic</h2>
-    <p>Covered combinational circuits, logic gates, and Boolean algebra.</p>
-</div>
-
-<div class="card" id="ulrs">
-    <h2>⚖️ ULRS1032 – Integrity & Anti-Corruption</h2>
-    <p>Strengthened my ethical awareness and understanding of integrity in academic and professional life.</p>
-</div>
-
-<!-- ===== OVERALL REFLECTION ===== -->
 <div class="card">
-    <h2>📝 Overall Semester Reflection</h2>
-    <p>
-        This semester built a strong foundation in both technical and soft skills. Although challenging,
-        it improved my discipline, time management, and motivation to continue learning in the field of
-        data and technology.
-    </p>
+<h2>📚 Courses This Semester</h2>
+<ul>
+<li>SECI1013 – Discrete Structure</li>
+<li>SECJ1013 – Programming Technique I</li>
+<li>SECP1513 – Technology & Information System</li>
+<li>SECR1013 – Digital Logic</li>
+<li>ULRS1032 – Integrity & Anti-Corruption</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>📝 Overall Semester Reflection</h2>
+<p>
+This semester provided a strong foundation in computing, logical thinking,
+and system-based problem solving. Besides technical knowledge, I developed
+important soft skills such as communication, teamwork, and time management.
+Although the workload was challenging, it motivated me to become more disciplined
+and confident in pursuing a future career in data and technology.
+</p>
 </div>
 
 </section>
 
-<footer>
-© 2025 Najla Auni • Portfolio Website
-</footer>
+<footer>© 2025 Najla Auni</footer>
 
 </body>
 </html>
