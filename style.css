@@ -1,3 +1,4 @@
+/* ===== Global Styles ===== */
 * {
     margin: 0;
     padding: 0;
@@ -34,14 +35,27 @@ section {
 
 h2 {
     margin-bottom: 15px;
+    color: #444;
 }
 
-a {
-    color: #4b5cff;
+/* ===== Buttons (seragam) ===== */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0077b5; /* warna utama */
+    color: white;
+    border-radius: 20px;
     text-decoration: none;
     font-weight: 500;
+    transition: 0.3s;
+    font-size: 0.9em;
 }
 
+.btn:hover {
+    background-color: #005f8d; /* hover effect */
+}
+
+/* ===== Course-bar ===== */
 .course-bar {
     display: flex;
     justify-content: center;
@@ -52,20 +66,41 @@ a {
 }
 
 .course-bar a {
-    background: #0077b5;
-    color: white;
-    padding: 8px 14px;
-    border-radius: 20px;
-    font-size: 0.9em;
+    /* guna class .btn supaya seragam */
+    /* kalau nak link course-bar semua guna .btn, buang styling di sini */
 }
 
-.course-bar a:hover {
-    background: #005f8d;
+/* ===== Links inside cards ===== */
+.card a {
+    text-decoration: none;
+    color: #0077b5;
+    font-weight: 500;
 }
 
+.card a:hover {
+    text-decoration: underline;
+}
+
+/* ===== Footer ===== */
 footer {
     text-align: center;
     padding: 30px;
     font-size: 0.9em;
     color: #777;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+    header {
+        padding: 40px 20px;
+    }
+    
+    section {
+        padding: 20px 10px;
+    }
+    
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
 }
