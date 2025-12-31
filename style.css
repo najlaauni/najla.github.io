@@ -80,6 +80,32 @@ h2 {
 .card a:hover {
     text-decoration: underline;
 }
+/* Tambah ini dalam CSS anda */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden; /* supaya border-radius nampak */
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+th {
+    background-color: #667eea; /* ikut warna header anda */
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+tr:hover {
+    background-color: #f9f9f9; /* kesan highlight bila mouse lalu */
+}
 
 /* ===== Footer ===== */
 footer {
